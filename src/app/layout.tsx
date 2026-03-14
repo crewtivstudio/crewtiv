@@ -1,4 +1,4 @@
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

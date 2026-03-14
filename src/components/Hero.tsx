@@ -1,17 +1,17 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const [offsetY, setOffsetY] = useState(0)
+  const [offsetY, setOffsetY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setOffsetY(window.scrollY)
-    window.addEventListener('scroll', handleScroll)
+    const handleScroll = () => setOffsetY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <section className="relative bg-[url('/hero-bg.png')] bg-cover bg-center bg-fixed text-white overflow-hidden min-h-screen flex items-center">
@@ -23,13 +23,17 @@ export default function Hero() {
             Your Brand <br />
             <span className="text-[#f22a98]">Visible</span>
           </h2>
-          <p className="max-w-xl mt-6 ml-5 sm:ml-30 sm:text-xl text-white text-lg">
+          <p className="max-w-xl mb-10 mt-6 ml-5 sm:ml-30 sm:text-xl text-white text-lg">
             Solusi kreatif untuk kehadiran digital kamu, Yuk bangun sesuatu yang luar biasa bersama!
           </p>
-
-          <button className="mt-8 ml-5 px-6 py-3 sm:ml-30 rounded-full text-white font-semibold bg-[#f22a98] hover:bg-white hover:text-[#f22a98] transition duration-300 shadow-lg">
-            EXPLORE NOW →
-          </button>
+        <a
+          href="https://wa.me/6287793942392?text=Halo%20kak,%20saya%20ingin%20konsultasi%20desain%20grafis"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 ml-5 px-6 py-3 sm:ml-30 rounded-full text-white font-semibold bg-[#f22a98] hover:bg-white hover:text-[#f22a98] transition duration-300 shadow-lg"
+          >
+          EXPLORE NOW →
+        </a>
         </div>
 
       
@@ -50,5 +54,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

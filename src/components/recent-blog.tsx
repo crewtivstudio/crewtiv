@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const blogPosts = [
   {
@@ -40,19 +40,19 @@ const blogPosts = [
     category: 'Tools',
     image: '/blogs/logo.jpg',
   },
-]
+];
 
 export default function RecentBlog() {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) =>
         prev + 1 > blogPosts.length - 3 ? 0 : prev + 1
-      )
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [])
+      );
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="bg-white py-16 text-center">
@@ -92,5 +92,5 @@ export default function RecentBlog() {
         Lebih lanjut
       </button>
     </section>
-  )
+  );
 }

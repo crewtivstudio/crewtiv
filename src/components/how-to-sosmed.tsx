@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaComments, FaClipboardList, FaChartLine } from 'react-icons/fa'
+import { FaComments, FaClipboardList, FaChartLine } from 'react-icons/fa';
 
 export default function HowToSosmed() {
   const steps = [
@@ -19,7 +19,7 @@ export default function HowToSosmed() {
       title: 'Akun Dikelola',
       desc: 'Tim kami mulai produksi konten & mengelola akun kamu secara rutin dan profesional.',
     },
-  ]
+  ];
 
   return (
     <section className="bg-black text-white py-20 px-6">
@@ -41,5 +41,5 @@ export default function HowToSosmed() {
         ))}
       </div>
     </section>
-  )
+  );
 }

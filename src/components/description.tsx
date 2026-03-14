@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React from 'react';
 
 export const Description = () => {
   return (
@@ -27,5 +27,5 @@ export const Description = () => {
         Yuk, mulai perjalanan digitalmu bareng Crewtiv Media hari ini juga! Gak perlu nunggu besok atau nunggu kaya dulu—karena website impian kamu bisa mulai dibangun sekarang dengan harga yang bersahabat. Mau tampil profesional di dunia online? Bisa! Mau buka toko online yang simpel tapi powerful? Bisa banget! Mau punya landing page kece yang bikin orang langsung jatuh hati? Udah pasti bisa! Semua ini bisa kamu dapatkan tanpa harus bikin dompet nangis. Di CrewTiv, kita percaya kalau hal keren gak harus mahal—yang penting ada niat, ada aksi, dan tentu saja, ada Crewtiv!
       </p>
     </div>
-  )
-}
+  );
+};

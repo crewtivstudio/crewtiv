@@ -1,5 +1,5 @@
-'use client'
-import { FaPalette, FaCalendarAlt, FaPenFancy, FaShareSquare } from 'react-icons/fa'
+'use client';
+import { FaPalette, FaCalendarAlt, FaPenFancy, FaShareSquare } from 'react-icons/fa';
 
 const steps = [
   {
@@ -22,7 +22,7 @@ const steps = [
     title: 'Posting & Monitoring',
     desc: 'Konten diposting dan performa dianalisis.',
   },
-]
+];
 
 export default function InfographicSosmed() {
   return (
@@ -42,5 +42,5 @@ export default function InfographicSosmed() {
       </div>
       </div>
     </section>
-  )
+  );
 }

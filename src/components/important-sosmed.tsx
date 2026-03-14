@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaUsers, FaBullhorn, FaChartLine } from 'react-icons/fa'
+import { FaUsers, FaBullhorn, FaChartLine } from 'react-icons/fa';
 
 export default function ImportantSosmed() {
   const benefits = [
@@ -19,7 +19,7 @@ export default function ImportantSosmed() {
       title: 'Strategi Konten Terarah',
       desc: 'Kami tidak hanya mendesain, tapi juga menganalisis dan merencanakan strategi konten untuk pertumbuhan akun yang berkelanjutan.',
     },
-  ]
+  ];
 
   return (
     <section className=" text-white py-20 px-6">
@@ -46,5 +46,5 @@ export default function ImportantSosmed() {
         </div>
       </div>
     </section>
-  )
+  );
 }

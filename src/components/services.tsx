@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
-import React from 'react'
+import Link from 'next/link';
+import React from 'react';
 
 const services = [
   {
@@ -22,7 +22,7 @@ const services = [
     description:
       'Membangun kehadiran digital yang kuat melalui konten yang menarik dan interaksi aktif untuk mendorong pertumbuhan brand.'
   }
-]
+];
 
 export const Services = () => {
   return (
@@ -51,5 +51,5 @@ export const Services = () => {
     </div>
     </section>
 
-  )
-}
+  );
+};

@@ -1,28 +1,28 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState, useEffect, useRef } from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [servicesOpen, setServicesOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const servicesRef = useRef<HTMLDivElement>(null)
+  const servicesRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolled(true)
+        setScrolled(true);
       } else {
-        setScrolled(false)
+        setScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -30,16 +30,16 @@ export default function Navbar() {
         servicesRef.current &&
         !servicesRef.current.contains(event.target as Node)
       ) {
-        setServicesOpen(false)
+        setServicesOpen(false);
       }
-    }
+    };
 
-    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav
@@ -104,7 +104,7 @@ export default function Navbar() {
             <NavItem href="/project-page">Project</NavItem>
 
             <a
-                href="https://wa.me/6287793942392?text=Halo%20kak,%20saya%20ingin%20konsultasi%20layanan%20desain%20grafis"
+                href="https://wa.me/6287793942392?text=Halo%20kak,%20saya%20ingin%20konsultasi%20layanan%20Crewtiv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#f22a98] text-white px-6 py-2 rounded-full hover:bg-white hover:text-[#f22a98] border border-[#f22a98] transition"
@@ -155,7 +155,7 @@ export default function Navbar() {
 
       </div>
     </nav>
-  )
+  );
 }
 
 function NavItem({ href, children }: { href: string; children: React.ReactNode }) {
@@ -166,7 +166,7 @@ function NavItem({ href, children }: { href: string; children: React.ReactNode }
     >
       {children}
     </Link>
-  )
+  );
 }
 
 function DropdownItem({
@@ -186,5 +186,5 @@ function DropdownItem({
     >
       {children}
     </Link>
-  )
+  );
 }

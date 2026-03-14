@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaGlobe, FaRocket, FaSearch } from 'react-icons/fa'
+import { FaGlobe, FaRocket, FaSearch } from 'react-icons/fa';
 
 export default function ImportantWebsite() {
   const benefits = [
@@ -19,7 +19,7 @@ export default function ImportantWebsite() {
       title: 'Memudahkan Ditemukan di Google',
       desc: 'Dengan optimasi SEO yang tepat, website membantumu menjangkau audiens yang lebih luas lewat pencarian Google.',
     },
-  ]
+  ];
 
   return (
     <section className=" text-white py-20 px-6">
@@ -46,5 +46,5 @@ export default function ImportantWebsite() {
         </div>
       </div>
     </section>
-  )
+  );
 }

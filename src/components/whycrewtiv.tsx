@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaBriefcase, FaTags, FaPalette, FaHandsHelping, FaRegComments, FaThumbsUp } from 'react-icons/fa'
+import { FaBriefcase, FaTags, FaPalette, FaHandsHelping, FaRegComments, FaThumbsUp } from 'react-icons/fa';
 
 export default function WhyCrewtiv() {
   const reasons = [
@@ -34,7 +34,7 @@ export default function WhyCrewtiv() {
       title: 'Terbukti Klien Puas',
       desc: 'Puluhan UMKM, personal brand, dan bisnis lokal telah mempercayakan brandingnya kepada kami.',
     },
-  ]
+  ];
 
   return (
     <section className="py-20 px-6 bg-black text-white">
@@ -61,5 +61,5 @@ export default function WhyCrewtiv() {
         </div>
       </div>
     </section>
-  )
+  );
 }

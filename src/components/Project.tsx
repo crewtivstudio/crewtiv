@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import React, { useState } from 'react'
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 const projects = [
   {
@@ -75,27 +75,27 @@ const projects = [
     ],
     tools: ['Illustrator', 'Photoshop']
   }
-]
+];
 
 export const Project = () => {
 
-  const [filter, setFilter] = useState('all')
-  const [selectedProject, setSelectedProject] = useState<any>(null)
+  const [filter, setFilter] = useState('all');
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const filteredProjects =
     filter === 'all'
       ? projects
-      : projects.filter((p) => p.category === filter)
+      : projects.filter((p) => p.category === filter);
 
   const handleClick = (project:any) => {
 
     if (project.category === 'website') {
-      window.open(project.link, '_blank')
+      window.open(project.link, '_blank');
     } else {
-      setSelectedProject(project)
+      setSelectedProject(project);
     }
 
-  }
+  };
 
   return (
     <section className="bg-black py-20 px-6 text-white">
@@ -325,5 +325,5 @@ export const Project = () => {
       )}
 
     </section>
-  )
+  );
 };

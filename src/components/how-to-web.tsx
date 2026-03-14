@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaComments, FaTags, FaGlobe } from 'react-icons/fa'
+import { FaComments, FaTags, FaGlobe } from 'react-icons/fa';
 
 export default function HowToWebsite() {
   const steps = [
@@ -19,7 +19,7 @@ export default function HowToWebsite() {
       title: 'Website Online',
       desc: 'Setelah desain & pengembangan selesai, website langsung live dan siap dipakai!',
     },
-  ]
+  ];
 
   return (
     <section className="bg-black text-white py-20 px-6">
@@ -41,5 +41,5 @@ export default function HowToWebsite() {
         ))}
       </div>
     </section>
-  )
+  );
 }

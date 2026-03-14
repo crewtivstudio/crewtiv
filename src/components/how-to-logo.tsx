@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaRegComments, FaPaintBrush, FaRocket } from 'react-icons/fa'
+import { FaRegComments, FaPaintBrush, FaRocket } from 'react-icons/fa';
 
 export default function HowToLogo() {
   const steps = [
@@ -19,7 +19,7 @@ export default function HowToLogo() {
       title: 'Logo Siap Digunakan',
       desc: 'Logo final dikirim dalam berbagai format dan siap digunakan untuk keperluan branding kamu.',
     },
-  ]
+  ];
 
   return (
     <section className="bg-black text-white py-20 px-6">
@@ -41,5 +41,5 @@ export default function HowToLogo() {
         ))}
       </div>
     </section>
-  )
+  );
 }

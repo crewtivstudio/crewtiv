@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
 const blogPosts = [
   {
@@ -19,7 +19,7 @@ const blogPosts = [
     image: '/blog/social-media.jpg',
   },
  
-]
+];
 
 export default function BlogListPage() {
   return (
@@ -96,5 +96,5 @@ export default function BlogListPage() {
         ))}
       </div>
     </section>
-  )
+  );
 }

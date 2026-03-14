@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa'
+import Link from 'next/link';
+import Image from 'next/image';
+import { FaInstagram, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -188,5 +188,5 @@ export default function Footer() {
       </p>
 
     </footer>
-  )
+  );
 };

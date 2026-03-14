@@ -10,7 +10,7 @@ export const fadeUp = {
       ease: 'easeOut',
     },
   },
-}
+};
 
 export const containerStagger = {
   hidden: {},
@@ -20,4 +20,4 @@ export const containerStagger = {
       delayChildren: 0.1,
     },
   },
-}
+};

@@ -1,5 +1,5 @@
-'use client'
-import { FaComments, FaCogs, FaLaptopCode, FaGlobe } from 'react-icons/fa'
+'use client';
+import { FaComments, FaCogs, FaLaptopCode, FaGlobe } from 'react-icons/fa';
 
 const steps = [
   {
@@ -22,7 +22,7 @@ const steps = [
     title: 'Website Siap Online',
     desc: 'Website Anda dipublikasikan dan siap digunakan.',
   },
-]
+];
 
 export default function InfographicWeb() {
   return (
@@ -44,5 +44,5 @@ export default function InfographicWeb() {
         </div>
       </div>
     </section>
-  )
+  );
 }

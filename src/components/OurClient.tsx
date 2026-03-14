@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const clientLogos = [
   { src: '/clients/pertamina.png', alt: 'Pertamina' },
@@ -12,31 +12,31 @@ const clientLogos = [
   { src: '/clients/sela.svg', alt: 'Sela' },
   { src: '/clients/opensea.svg', alt: 'OpenSea' },
   { src: '/clients/polygon.png', alt: 'Polygon' },
-]
+];
 
 export default function OurClient() {
-  const [index, setIndex] = useState(0)
-  const [logosPerPage, setLogosPerPage] = useState(5)
+  const [index, setIndex] = useState(0);
+  const [logosPerPage, setLogosPerPage] = useState(5);
 
   useEffect(() => {
     const handleResize = () => {
-      setLogosPerPage(window.innerWidth < 640 ? 3 : 5)
-    }
+      setLogosPerPage(window.innerWidth < 640 ? 3 : 5);
+    };
 
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) =>
         prev + 1 > clientLogos.length - logosPerPage ? 0 : prev + 1
-      )
-    }, 3000)
+      );
+    }, 3000);
 
-    return () => clearInterval(interval)
-  }, [logosPerPage])
+    return () => clearInterval(interval);
+  }, [logosPerPage]);
 
   return (
     <section className="bg-white py-16 text-center overflow-hidden">
@@ -66,5 +66,5 @@ export default function OurClient() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-'use client'
-import { useEffect, useState } from 'react'
-import { FaQuoteLeft } from 'react-icons/fa'
+'use client';
+import { useEffect, useState } from 'react';
+import { FaQuoteLeft } from 'react-icons/fa';
 
 const testimonials = [
   { name: 'K Oiwake', message: 'Fantastic customer service. I shifted from a traditional bank to Sable and Sable’s customer service helped me answer all the questions that I needed to switch.' },
@@ -10,32 +10,32 @@ const testimonials = [
   { name: 'R Putri', message: 'Pelayanan sangat cepat dan hasil desainnya memuaskan. Akan bekerja sama lagi!' },
   { name: 'B Santoso', message: 'Crewtiv membawa ide saya jadi kenyataan. Desainnya rapi dan komunikasinya enak banget!' },
   { name: 'M Clara', message: 'Tim yang responsif dan penuh ide-ide segar. Kreasi branding saya jadi makin solid.' },
-]
+];
 
 export default function Reviews() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [itemsPerSlide, setItemsPerSlide] = useState(3)
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerSlide, setItemsPerSlide] = useState(3);
 
   useEffect(() => {
     const handleResize = () => {
-      setItemsPerSlide(window.innerWidth < 640 ? 1 : 3)
-    }
+      setItemsPerSlide(window.innerWidth < 640 ? 1 : 3);
+    };
 
-    handleResize() // Initial check
-    window.addEventListener('resize', handleResize)
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) =>
         prev + 1 > testimonials.length - itemsPerSlide ? 0 : prev + 1
-      )
-    }, 3000)
+      );
+    }, 3000);
 
-    return () => clearInterval(interval)
-  }, [itemsPerSlide])
+    return () => clearInterval(interval);
+  }, [itemsPerSlide]);
 
   return (
     <section className="bg-white text-white py-20 px-6 overflow-hidden">
@@ -65,5 +65,5 @@ export default function Reviews() {
         </div>
       </div>
     </section>
-  )
+  );
 }

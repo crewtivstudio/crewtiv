@@ -1,5 +1,5 @@
-'use client'
-import { FaSearch, FaPaintBrush, FaSyncAlt, FaCheckCircle } from 'react-icons/fa'
+'use client';
+import { FaSearch, FaPaintBrush, FaSyncAlt, FaCheckCircle } from 'react-icons/fa';
 
 const steps = [
   {
@@ -22,7 +22,7 @@ const steps = [
     title: 'Finalisasi & Delivery File',
     desc: 'Mengirim file final lengkap dalam berbagai format siap pakai.',
   },
-]
+];
 
 export default function InfographicLogo() {
   return (
@@ -44,5 +44,5 @@ export default function InfographicLogo() {
         </div>
       </div>
     </section>
-  )
+  );
 }

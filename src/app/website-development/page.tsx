@@ -1,14 +1,14 @@
-'use client'
+'use client';
 
-import Footer from '@/components/footer'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import Footer from '@/components/footer';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0 },
-}
+};
 
 const packages = [
   {
@@ -74,16 +74,16 @@ const packages = [
     ],
     unavailable: [],
   },
-]
+];
 
 export default function WebDevPage() {
-  const [offsetY, setOffsetY] = useState(0)
+  const [offsetY, setOffsetY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setOffsetY(window.scrollY)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const handleScroll = () => setOffsetY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <main className="bg-[url('/hero-bg.png')] bg-cover bg-center bg-black text-white pt-30 lg:pt-10">
@@ -365,5 +365,5 @@ export default function WebDevPage() {
       <Footer />
 
     </main>
-  )
+  );
 }

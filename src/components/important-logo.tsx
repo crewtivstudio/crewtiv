@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { FaEye, FaBrain, FaHandshake } from 'react-icons/fa'
+import { FaEye, FaBrain, FaHandshake } from 'react-icons/fa';
 
 export default function ImportantLogo() {
   const reasons = [
@@ -19,7 +19,7 @@ export default function ImportantLogo() {
       title: 'Membangun Kepercayaan Pelanggan',
       desc: 'Logo yang konsisten dan relevan menciptakan hubungan emosional dan kepercayaan dengan pelanggan kamu.',
     },
-  ]
+  ];
 
   return (
     <section className=" text-white py-20 px-6">
@@ -46,5 +46,5 @@ export default function ImportantLogo() {
         </div>
       </div>
     </section>
-  )
+  );
 }

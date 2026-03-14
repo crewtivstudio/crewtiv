@@ -27,4 +27,4 @@ export const projects = [
     category: 'website',
     link: 'https://example.com',
   },
-]
+];

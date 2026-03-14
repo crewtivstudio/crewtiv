@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import React from 'react'
+import React from 'react';
 
 const packages = [
   {
@@ -66,7 +66,7 @@ const packages = [
     ],
     unavailable: [],
   },
-]
+];
 
 export default function WebPrice() {
   return (
@@ -109,5 +109,5 @@ export default function WebPrice() {
         ))}
       </div>
     </section>
-  )
+  );
 }
